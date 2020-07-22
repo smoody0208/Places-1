@@ -1,0 +1,12 @@
+@{
+  Layout = "_Layout";
+}
+
+<h1>Add a new Place to @Model.Name</h1>
+
+<form action="/location/@Model.Id" method="post">
+  <input id="categoryId" name="categoryId" type="hidden" value="@Model.Id">
+  <label for="cityName">City:</label>
+  <input id="cityName" name="cityName" type="text">
+  <button type='submit'>Add item</button>
+</form>
